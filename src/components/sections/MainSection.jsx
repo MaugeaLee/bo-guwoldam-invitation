@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
 import {Container, Typography, Button, Box} from '@mui/material';
+import Section from '../Section';
 
 import TitleImg from '../../assets/logo.svg';
 
 const MainSection = () => {
     return (
-        <Box>
+        <Section sx={{ backgroundColor: '#ffffff' }}>
             <Container maxWidth="sm" sx={{ textAlign: 'center', py: 10 }}>
                 <Typography variant="overline" color="primary">
                     SAVE THE DATE
@@ -30,10 +30,10 @@ const MainSection = () => {
                     동도로동동 합주실
                 </Typography>
                 <Button variant="contained" disableElevation>
-                    구글 캘린더 추가
+                    참석하기
                 </Button>
         </Container>
-      </Box>
+      </Section>
     )
 }
 
