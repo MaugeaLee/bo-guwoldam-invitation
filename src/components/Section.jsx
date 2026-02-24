@@ -16,6 +16,7 @@ const Section = ({ children, sx = {} }) => {
             py: 6,
             boxSizing: 'border-box',
             position: 'relative',
+            ...sx,
           }}>
             <Container maxWidth='sm'>
                 {children}
