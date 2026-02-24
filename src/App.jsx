@@ -2,8 +2,8 @@ import React from 'react';
 import { createTheme, ThemeProvider, CssBaseline, Box, Stack} from '@mui/material';
 
 import MainSection from './components/sections/MainSection';
-import GallerySection from "./components/sections/GallerySection"
-
+import GallerySection from './components/sections/GallerySection'
+import MapSection from './components/sections/MapSection'
 
 // 1. 초대장 컨셉에 맞는 테마 설정
 const theme = createTheme({
@@ -44,6 +44,8 @@ function App() {
           {/* 정보 입력 */}
 
           {/* 오시는 길 */}
+          <MapSection />
+
         </Stack>
       </Box>
     </ThemeProvider>
